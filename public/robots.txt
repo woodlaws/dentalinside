@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://dental-inside-agency.geosangbruce.chatgpt.site/sitemap.xml

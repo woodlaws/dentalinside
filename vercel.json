@@ -1,0 +1,23 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": "vite",
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "trailingSlash": false,
+  "rewrites": [
+    { "source": "/about", "destination": "/about/index.html" },
+    { "source": "/services", "destination": "/services/index.html" },
+    { "source": "/services/naver-place", "destination": "/services/naver-place/index.html" },
+    { "source": "/services/dental-content", "destination": "/services/dental-content/index.html" },
+    { "source": "/services/shorts-youtube", "destination": "/services/shorts-youtube/index.html" },
+    { "source": "/services/profile-photo", "destination": "/services/profile-photo/index.html" },
+    { "source": "/services/aeo-geo", "destination": "/services/aeo-geo/index.html" },
+    { "source": "/services/patient-funnel", "destination": "/services/patient-funnel/index.html" },
+    { "source": "/services/ads", "destination": "/services/ads/index.html" },
+    { "source": "/services/website-consulting", "destination": "/services/website-consulting/index.html" },
+    { "source": "/cases", "destination": "/cases/index.html" },
+    { "source": "/process", "destination": "/process/index.html" },
+    { "source": "/insights", "destination": "/insights/index.html" },
+    { "source": "/contact", "destination": "/contact/index.html" }
+  ]
+}
