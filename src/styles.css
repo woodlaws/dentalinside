@@ -180,3 +180,8 @@ body{font-size:27px}.nav-wrap{height:118px}.brand-copy{font-size:36px}.brand-cop
 .site-footer .brand-copy{position:static!important;display:flex!important;flex-direction:column;align-items:stretch;justify-content:center;width:auto!important;height:auto!important;padding:0!important;margin:0!important;overflow:visible!important;clip:auto!important;white-space:nowrap!important;border:0!important;color:#fff;font-family:'Noto Sans KR',sans-serif;font-size:29px;font-weight:700;line-height:1.05;letter-spacing:-.045em}
 .site-footer .brand-copy small{display:block;align-self:stretch;margin:7px 0 0;color:#62DDD4;font-size:11px!important;font-weight:700;line-height:1;letter-spacing:.22em;text-align:center}
 @media(max-width:680px){.site-footer .brand{min-width:0;width:max-content;height:76px;gap:7px}.site-footer .brand:before{width:64px;height:70px;flex-basis:64px}.site-footer .brand-copy{font-size:24px}.site-footer .brand-copy small{margin-top:5px;font-size:9px!important}}
+
+/* v24: reveal the connected clinic interior on the empty desktop-left area. */
+@media(min-width:681px){
+  .hero-bg:after{background:linear-gradient(90deg,rgba(232,244,245,.16) 0%,rgba(244,249,249,.34) 12%,rgba(255,255,255,.70) 22%,rgba(255,255,255,.76) 39%,rgba(255,255,255,.18) 59%,rgba(255,255,255,.04) 100%)}
+}
