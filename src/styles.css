@@ -146,20 +146,20 @@ body{font-size:27px}.nav-wrap{height:118px}.brand-copy{font-size:36px}.brand-cop
 @media(max-width:680px){.hero-bg{background-position:58% center}.hero-bg:after{background:linear-gradient(180deg,rgba(255,255,255,.9) 0%,rgba(255,255,255,.82) 48%,rgba(255,255,255,.24) 74%,rgba(255,255,255,.42))}.hero>.container.hero-grid>.hero-proof{width:100%;padding:24px}.hero-proof .proof-grid{grid-template-columns:1fr}.hero-proof .proof-grid>div,.hero-proof .proof-grid>div:first-child,.hero-proof .proof-grid>div:last-child{padding:14px 0;border-right:0;border-bottom:1px solid var(--line)}.hero-proof .proof-grid>div:last-child{border-bottom:0}.hero-proof .proof-grid small{min-height:0}.hero-proof .proof-grid strong{margin-top:6px}}
 
 /* v21: complete header symbol, aligned wordmark, wider desktop proof card */
-.site-header .brand{min-width:310px;gap:20px}
+.site-header .brand{min-width:300px;gap:10px}
 .site-header .brand:before{width:82px;height:88px;flex:0 0 82px;background:#fff url('/assets/images/dental-inside-symbol-header-v1.webp') center/contain no-repeat}
-.site-header .brand-copy{display:flex!important;flex-direction:column;align-items:flex-start;justify-content:center}
-.site-header .brand-copy small{display:block;align-self:flex-start;margin:7px 0 0;text-align:left}
+.site-header .brand-copy{display:flex!important;flex-direction:column;align-items:stretch;justify-content:center}
+.site-header .brand-copy small{display:block;align-self:stretch;margin:7px 0 0;text-align:center}
 @media(min-width:1201px){.hero>.container.hero-grid>.hero-proof{width:720px}.hero-proof .proof-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.hero-proof .proof-grid small{min-height:0;font-size:20px;line-height:1.35;white-space:nowrap}}
-@media(min-width:901px) and (max-width:1200px){.site-header .brand{min-width:278px;gap:16px}.site-header .brand:before{width:72px;height:78px;flex-basis:72px}.hero>.container.hero-grid>.hero-proof{width:min(680px,62vw)}.hero-proof .proof-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.hero-proof .proof-grid small{min-height:0;font-size:18px;white-space:nowrap}}
-@media(max-width:680px){.site-header .brand{min-width:245px;width:245px;gap:12px}.site-header .brand:before{width:62px;height:70px;flex-basis:62px}.site-header .brand-copy small{margin-top:5px}}
+@media(min-width:901px) and (max-width:1200px){.site-header .brand{min-width:270px;gap:8px}.site-header .brand:before{width:72px;height:78px;flex-basis:72px}.hero>.container.hero-grid>.hero-proof{width:min(680px,62vw)}.hero-proof .proof-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.hero-proof .proof-grid small{min-height:0;font-size:18px;white-space:nowrap}}
+@media(max-width:680px){.site-header .brand{min-width:240px;width:240px;gap:7px}.site-header .brand:before{width:62px;height:70px;flex-basis:62px}.site-header .brand-copy small{margin-top:5px}}
 
 /* v22 final QA: active state, touch navigation, safe mobile line wrapping */
 .nav-links a[aria-current="page"],.nav-cta[aria-current="page"]{color:#008F87}
 @media(max-width:1180px){.nav-links{max-height:calc(100vh - 109px);overflow-y:auto;overscroll-behavior:contain}.menu-button{flex:0 0 52px;min-width:52px;min-height:52px}}
 @media(max-width:680px){
   .nav-wrap{gap:8px}
-  .site-header .brand{min-width:0;width:auto;max-width:260px;flex:1 1 auto;gap:12px}
+  .site-header .brand{min-width:0;width:auto;max-width:260px;flex:1 1 auto;gap:7px}
   .site-header .brand:before{width:62px;height:70px;flex:0 0 62px}
   .menu-button{display:grid;place-items:center;flex:0 0 48px;min-width:48px;min-height:48px;padding:0}
   .hero>.container.hero-grid>.hero-copy{min-width:0;max-width:100%;overflow:visible}
@@ -173,3 +173,10 @@ body{font-size:27px}.nav-wrap{height:118px}.brand-copy{font-size:36px}.brand-cop
 
 /* Add 30px of usable width on both desktop sides. */
 @media(min-width:1201px){.container,.hero>.container.hero-grid{width:calc(100% - 20px);max-width:1460px}}
+
+/* v23: transparent footer brand lockup on the dark footer background */
+.site-footer .brand{min-width:290px;width:max-content;height:88px;gap:10px;overflow:visible}
+.site-footer .brand:before{width:76px;height:82px;flex:0 0 76px;border-radius:0;box-shadow:none;background:transparent url('/assets/images/footer-symbol-transparent-v1.png') center/contain no-repeat}
+.site-footer .brand-copy{position:static!important;display:flex!important;flex-direction:column;align-items:stretch;justify-content:center;width:auto!important;height:auto!important;padding:0!important;margin:0!important;overflow:visible!important;clip:auto!important;white-space:nowrap!important;border:0!important;color:#fff;font-family:'Noto Sans KR',sans-serif;font-size:29px;font-weight:700;line-height:1.05;letter-spacing:-.045em}
+.site-footer .brand-copy small{display:block;align-self:stretch;margin:7px 0 0;color:#62DDD4;font-size:11px!important;font-weight:700;line-height:1;letter-spacing:.22em;text-align:center}
+@media(max-width:680px){.site-footer .brand{min-width:0;width:max-content;height:76px;gap:7px}.site-footer .brand:before{width:64px;height:70px;flex-basis:64px}.site-footer .brand-copy{font-size:24px}.site-footer .brand-copy small{margin-top:5px;font-size:9px!important}}
